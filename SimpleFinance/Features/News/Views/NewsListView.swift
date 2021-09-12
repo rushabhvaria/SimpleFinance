@@ -93,7 +93,6 @@ struct NewsListView: View {
     }
 
     private func getTimestampInFormat( for seconds: Int) -> String {
-        seconds = seconds
         let time = (seconds / 3600, (seconds % 3600) / 60)
         let stringToReturn = String(time.0) + "h " + String(time.1) + "m ago"
         return stringToReturn
