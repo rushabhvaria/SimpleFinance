@@ -85,16 +85,17 @@ struct NewsListView: View {
     
     private func getPublishedTime(for article: News) -> String {
         guard let nd = inDateFormatter.date(from: article.publishedAt) else { return "" }
-        let intervalFromToday = nd.timeIntervalSinceNow()
+        let intervalFromToday = nd.timeIntervalSinceNow * -1
 
         //let formattedString = outDateFormatter.string(from: nd)
-        let formattedString = getTimestampInFormat(from: nd)
+        let formattedString = getTimestampInFormat(for: Int(intervalFromToday))
         return formattedString
     }
 
-    private func getTimestampInFormat( for seconds: Double) -> String {
+    private func getTimestampInFormat( for seconds: Int) -> String {
+        seconds = seconds
         let time = (seconds / 3600, (seconds % 3600) / 60)
-        var stringToReturn = time[0] + "h " + time[1]+" m ago"
+        let stringToReturn = String(time.0) + "h " + String(time.1) + "m ago"
         return stringToReturn
     }
 }
