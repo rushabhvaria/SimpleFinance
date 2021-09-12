@@ -82,8 +82,8 @@ struct StocksAppView: View {
     }
 }
 
-struct StocksAppView_Previews: PreviewProvider {
-    static var previews: some View {
-        StocksAppView()
-    }
-}
+//struct StocksAppView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StocksAppView()
+//    }
+//}

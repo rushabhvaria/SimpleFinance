@@ -21,10 +21,10 @@ struct MiniQuoteView: View {
                             .font(.subheadline)
                             .bold()
                         
-                        Text(quote.price)
+                        Text(getShortVal(for: quote.price))
                             .font(.subheadline)
                         
-                        Text(quote.change)
+                        Text(getShortVal(for: quote.changePercent)+"%")
                             .font(.subheadline)
                             .padding(.horizontal)
                             .frame(width: 100)
@@ -37,5 +37,9 @@ struct MiniQuoteView: View {
 //        .onAppear{
 //            stockQuotes.download(stocks: [], completion: { _ in })
 //        }
+    }
+    private func getShortVal(for val: String) -> String {
+        let dec = (val as NSString).floatValue
+        return NSString(format: "%.2f", dec) as String
     }
 }

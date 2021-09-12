@@ -15,7 +15,7 @@ struct SimpleFinanceApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            LaunchView()
+            ContentView()
         }
     }
 }
