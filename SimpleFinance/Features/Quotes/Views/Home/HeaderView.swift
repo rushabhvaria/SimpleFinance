@@ -22,7 +22,7 @@ struct HeaderView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: -5) {
-                Text("RV Stocks")
+                Text("Simple Finance")
                     .foregroundColor(.white)
                     .bold()
                 
