@@ -18,6 +18,7 @@ Built using XCode 12.5.1 (Swift 5)
 2. Open shell window and navigate to project folder
 3. Run `pod install`
 4. Open `SimpleFinance.xcworkspace` and run the project on selected device or simulator
+5. Use "SimpleFinance" for username and "SimpleFinance" for password to log in to the app
 
 ### How was it created?
 
