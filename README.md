@@ -2,14 +2,19 @@
 
 Simple Finance Swift iOS app getting started.
 
-Built using XCode 9.4.1 (Swift 4)
+Built using XCode 12.5.1 (Swift 5)
 
-### How to run the example?
+#### Requirements
+* Cocoapods (https://cocoapods.org)
+* XCode 12.5.1 +
+* Swift 5.4.2 +
+
+### How to run SimpleFinance?
 
 1. Clone this repo
-1. Open shell window and navigate to project folder
-1. Run `pod install`
-1. Open `SimpleFinance.xcworkspace` and run the project on selected device or simulator
+2. Open shell window and navigate to project folder
+3. Run `pod install`
+4. Open `SimpleFinance.xcworkspace` and run the project on selected device or simulator
 
 ### How was it created?
 
