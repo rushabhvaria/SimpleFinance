@@ -4,6 +4,9 @@ Simple Finance Swift iOS app getting started.
 
 Built using XCode 12.5.1 (Swift 5)
 
+<img src="Documentation/HomeView.png" width="45%"></img> 
+<img src="Documentation/NewsListView.png" width="45%"></img> 
+
 #### Requirements
 * Cocoapods (https://cocoapods.org)
 * XCode 12.5.1 +
